@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+     height: 100vh;
+     display: grid;
+     grid-template-areas: 
+     "nav header"
+     "nav main"
+     "nav footer";
+     grid-template-columns:400px 1fr ;
+     grid-template-rows: 50px 1fr 50px;
+     padding: 40px;    
+}
+nav{
+    grid-area: nav;
+    background-color: aquamarine;
+    display: grid;
+    padding-right: 40px ;
+}
+.menu-container{
+    background-color: magenta;
+    border-radius: 35px;
+    display: grid;
+    grid-template-rows: 180px 1fr 180px;
+    overflow: hidden;
+}
+.icon{
+    background-color: maroon;
+
+}
+.menu{
+    background-color: mistyrose;
+
+}
+.guide{
+    background-color: palegreen;
+
+}
+
+header{
+    grid-area: header;
+    background-color: rgb(207, 63, 85);
+    display: grid;
+    place-items: end;
+}
+.avatar-container{
+    background-color: mediumvioletred;
+    height: 100%;
+    width: 210px;
+}
+main{
+    grid-area: main;
+    background-color: lightslategray;
+    display: grid;
+    grid-template-areas: 
+      "title title"
+      "cards cards"
+      "graphic post";
+      background-color: springgreen;
+      grid-template-rows: 70px 1fr 2fr;
+      grid-template-columns: 1fr 300px;
+}
+.title-container{
+    grid-area: title;
+    background-color: plum;
+}
+.cards-container{
+    grid-area: cards;
+    background-color: rosybrown;
+}
+.graphic-container{
+    grid-area: graphic;
+    background-color: slategray;
+}
+.post-container{
+    grid-area: post;
+    background-color: snow;
+}
+footer{
+    grid-area: footer;
+    background-color: lightyellow;
+
+}
